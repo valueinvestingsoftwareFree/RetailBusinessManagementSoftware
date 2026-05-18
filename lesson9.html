@@ -3,43 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecture 9. Modify or Delete Items in a Purchase</title>
+
+<title>Lecture 9. Modify or Delete Items in a Purchase | Inventory Corrections, Purchase Adjustments & Stock Integrity</title>
+
+<meta name="description" content="Learn the importance of modifying and correcting purchase transactions inside the ERP system. Discover how purchase corrections affect inventory quantities, stock valuation, accounting consistency, supplier balances, operational accuracy, and business intelligence.">
+
+<meta name="keywords" content="modify purchase ERP, delete purchase items, inventory correction system, purchase adjustments, stock correction software, ERP purchase management, inventory accuracy, supplier transactions, inventory integrity, purchasing workflow">
 
 <style>
+
     body{
         margin:0;
         padding:0;
         font-family:Arial, sans-serif;
         background:#0f172a;
         color:white;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        min-height:100vh;
+        line-height:1.8;
     }
 
     .container{
         width:90%;
-        max-width:900px;
+        max-width:1150px;
+        margin:40px auto;
         background:#111827;
         padding:50px;
         border-radius:18px;
         box-shadow:0 0 25px rgba(0,0,0,0.4);
-        text-align:center;
     }
 
     h1{
-        font-size:2.1rem;
-        margin-bottom:25px;
+        font-size:2.3rem;
+        margin-bottom:30px;
         color:#60a5fa;
         line-height:1.4;
+        text-align:center;
+    }
+
+    h2{
+        color:#93c5fd;
+        margin-top:45px;
+        margin-bottom:20px;
+        font-size:1.6rem;
     }
 
     p{
-        font-size:1.1rem;
-        line-height:1.8;
+        font-size:1.08rem;
+        line-height:1.9;
         color:#d1d5db;
-        margin-bottom:20px;
+        margin-bottom:22px;
+    }
+
+    ul{
+        color:#d1d5db;
+        padding-left:25px;
+    }
+
+    li{
+        margin-bottom:14px;
     }
 
     .highlight{
@@ -47,10 +67,24 @@
         font-weight:bold;
     }
 
+    .intro-box{
+        background:#1e293b;
+        border-left:5px solid #60a5fa;
+        padding:25px;
+        border-radius:12px;
+        margin-bottom:35px;
+    }
+
+    .section{
+        margin-top:50px;
+        padding-top:25px;
+        border-top:1px solid rgba(255,255,255,0.08);
+    }
+
     .button{
         display:inline-block;
-        margin-top:25px;
-        padding:14px 28px;
+        margin:10px;
+        padding:14px 26px;
         background:#2563eb;
         color:white;
         text-decoration:none;
@@ -63,6 +97,15 @@
         background:#1d4ed8;
         transform:translateY(-2px);
     }
+
+    .button-green{
+        background:#059669;
+    }
+
+    .button-green:hover{
+        background:#047857;
+    }
+
 </style>
 </head>
 
@@ -70,39 +113,412 @@
 
 <div class="container">
 
-    <h1>Lecture 9. Modify or Delete Items in a Purchase</h1>
+    <h1>
+        Lecture 9. Modify or Delete Items in a Purchase
+    </h1>
+
+    <div class="intro-box">
+
+        <p>
+            In this lecture you will learn how to 
+            <span class="highlight">modify</span> 
+            or 
+            <span class="highlight">delete</span> 
+            items inside purchase transactions safely and professionally.
+        </p>
+
+        <p>
+            Real business environments are dynamic, and purchase operations frequently require corrections, updates, adjustments, or reversals after the original transaction has already been recorded.
+        </p>
+
+        <p>
+            The ability to correct purchases properly is one of the most important features of a professional ERP and inventory management system because inventory accuracy depends heavily on the quality and integrity of purchasing records.
+        </p>
+
+    </div>
+
+    <h2>
+        Why Purchases Must Be Recorded Correctly
+    </h2>
 
     <p>
-        In this lecture you will learn how to 
-        <span class="highlight">modify</span> 
-        or 
-        <span class="highlight">delete</span> 
-        items within a purchase transaction.
+        Purchase transactions directly affect inventory quantities, product costs, supplier balances, operational reports, stock availability, accounting information, and future business decisions.
     </p>
 
     <p>
-        During real business operations, purchase records may require adjustments because of quantity corrections, pricing changes, supplier updates, or data entry mistakes.
+        Every purchase entered into the system becomes part of the permanent operational history of the company.
     </p>
 
     <p>
-        You will learn how to edit existing purchase items safely while maintaining accurate inventory balances and transaction consistency.
+        For this reason, even small errors in purchases can generate major operational problems later.
     </p>
 
     <p>
-        The lecture also explains how to remove products from a purchase document and how those changes automatically affect stock quantities and related calculations inside the system.
+        Incorrect purchases may affect:
+    </p>
+
+    <ul>
+        <li>Inventory stock balances</li>
+        <li>Product cost calculations</li>
+        <li>Average inventory valuation</li>
+        <li>Supplier balances</li>
+        <li>Accounts payable information</li>
+        <li>Profitability analysis</li>
+        <li>Sales margins</li>
+        <li>Financial reports</li>
+        <li>Operational planning</li>
+        <li>Inventory forecasting</li>
+    </ul>
+
+    <p>
+        Because purchase information affects so many parts of the system, the ability to modify or delete transactions safely becomes extremely important.
+    </p>
+
+    <h2>
+        Why Purchase Corrections Are Necessary
+    </h2>
+
+    <p>
+        In real business operations, purchase corrections happen constantly.
     </p>
 
     <p>
-        Proper management of purchase modifications helps maintain reliable inventory records and improves operational accuracy across purchasing processes.
+        Even experienced operators occasionally need to adjust transactions due to:
+    </p>
+
+    <ul>
+        <li>Incorrect quantities entered during registration</li>
+        <li>Supplier price corrections</li>
+        <li>Invoice discrepancies</li>
+        <li>Duplicate purchase entries</li>
+        <li>Wrong supplier selection</li>
+        <li>Incorrect products added accidentally</li>
+        <li>Returned merchandise</li>
+        <li>Damaged products</li>
+        <li>Canceled supplier orders</li>
+        <li>Typing mistakes during data entry</li>
+        <li>Tax adjustments</li>
+        <li>Currency conversion corrections</li>
+    </ul>
+
+    <p>
+        A professional ERP system must allow these corrections while maintaining database consistency and inventory integrity.
+    </p>
+
+    <h2>
+        Inventory Integrity and Stock Accuracy
+    </h2>
+
+    <p>
+        One of the most important concepts in inventory systems is 
+        <span class="highlight">inventory integrity</span>.
     </p>
 
     <p>
-        The Udemy course includes a practical step-by-step demonstration showing how to update and delete purchase items correctly using real workflow examples.
+        Inventory integrity means that the quantities stored in the database must always match the real physical quantities inside the business.
     </p>
 
-    <a href="Contenido.html" class="button">
-        Return to Course Curriculum
-    </a>
+    <p>
+        When purchases are modified or deleted, the ERP system automatically recalculates stock balances to keep inventory synchronized.
+    </p>
+
+    <p>
+        For example:
+    </p>
+
+    <ul>
+        <li>If a purchase quantity is reduced, inventory quantities must also decrease</li>
+        <li>If a purchase item is deleted entirely, the system must remove those units from stock</li>
+        <li>If purchase prices are modified, inventory valuation calculations may change</li>
+        <li>If products are replaced, the system must update multiple stock balances simultaneously</li>
+    </ul>
+
+    <p>
+        This automatic synchronization is extremely important because manual inventory corrections are highly error-prone and difficult to maintain over time.
+    </p>
+
+    <h2>
+        Importance of Correcting Errors Quickly
+    </h2>
+
+    <p>
+        Small inventory mistakes can expand into much larger operational problems if they are not corrected quickly.
+    </p>
+
+    <p>
+        For example, an incorrect purchase quantity may create:
+    </p>
+
+    <ul>
+        <li>False inventory availability</li>
+        <li>Unexpected stock shortages</li>
+        <li>Incorrect reorder decisions</li>
+        <li>Distorted profitability reports</li>
+        <li>Incorrect product costs</li>
+        <li>Accounting inconsistencies</li>
+        <li>Supplier balance mismatches</li>
+        <li>Problems during audits</li>
+    </ul>
+
+    <p>
+        Businesses that maintain disciplined correction processes usually operate with much more reliable information.
+    </p>
+
+    <h2>
+        Product Cost Recalculation
+    </h2>
+
+    <p>
+        Modifying purchases can also affect product cost calculations significantly.
+    </p>
+
+    <p>
+        Many ERP systems use purchase information to calculate:
+    </p>
+
+    <ul>
+        <li>Average inventory costs</li>
+        <li>Latest purchase prices</li>
+        <li>Weighted inventory valuation</li>
+        <li>Gross profit margins</li>
+        <li>Operational profitability</li>
+    </ul>
+
+    <p>
+        If purchase prices are incorrect and remain uncorrected, businesses may unknowingly:
+    </p>
+
+    <ul>
+        <li>Sell products below cost</li>
+        <li>Miscalculate profits</li>
+        <li>Overestimate inventory value</li>
+        <li>Generate distorted reports</li>
+        <li>Make incorrect pricing decisions</li>
+    </ul>
+
+    <p>
+        Correct purchase editing ensures that cost calculations remain accurate over time.
+    </p>
+
+    <h2>
+        Operational Traceability
+    </h2>
+
+    <p>
+        Another major advantage of modifying purchases inside an ERP system is operational traceability.
+    </p>
+
+    <p>
+        Every correction becomes part of the business operational history.
+    </p>
+
+    <p>
+        This allows companies to:
+    </p>
+
+    <ul>
+        <li>Track inventory adjustments</li>
+        <li>Analyze correction patterns</li>
+        <li>Audit purchasing operations</li>
+        <li>Detect repetitive operational mistakes</li>
+        <li>Improve employee training</li>
+        <li>Increase purchasing reliability</li>
+    </ul>
+
+    <p>
+        Maintaining traceable purchase records improves long-term operational control significantly.
+    </p>
+
+    <h2>
+        Real-World Scenarios Where Purchase Corrections Matter
+    </h2>
+
+    <p>
+        In real businesses, purchase corrections happen far more often than many people expect.
+    </p>
+
+    <p>
+        Common examples include:
+    </p>
+
+    <ul>
+        <li>A supplier delivers fewer units than invoiced</li>
+        <li>Purchase prices change after invoice review</li>
+        <li>Products arrive damaged</li>
+        <li>The wrong product barcode was selected</li>
+        <li>The same invoice was entered twice accidentally</li>
+        <li>Taxes were calculated incorrectly</li>
+        <li>Supplier credits require adjustments</li>
+        <li>Products are returned to the supplier</li>
+        <li>An operator entered an extra zero by mistake</li>
+    </ul>
+
+    <p>
+        Without a proper correction system, these situations can create major inventory inconsistencies.
+    </p>
+
+    <h2>
+        Importance for Financial Reporting
+    </h2>
+
+    <p>
+        Purchase modifications also affect financial reporting.
+    </p>
+
+    <p>
+        Inventory is typically considered a business asset, meaning inventory inaccuracies may distort:
+    </p>
+
+    <ul>
+        <li>Balance sheets</li>
+        <li>Profit calculations</li>
+        <li>Expense reports</li>
+        <li>Tax reporting</li>
+        <li>Cash flow analysis</li>
+        <li>Inventory valuation reports</li>
+    </ul>
+
+    <p>
+        Accurate purchase maintenance therefore contributes directly to better financial transparency.
+    </p>
+
+    <h2>
+        ERP Automation Advantages
+    </h2>
+
+    <p>
+        One of the biggest advantages of modern ERP systems is automation.
+    </p>
+
+    <p>
+        When purchase items are modified or deleted inside the software, the system can automatically:
+    </p>
+
+    <ul>
+        <li>Update inventory balances</li>
+        <li>Recalculate totals</li>
+        <li>Adjust supplier balances</li>
+        <li>Update inventory valuation</li>
+        <li>Refresh operational reports</li>
+        <li>Synchronize transaction history</li>
+        <li>Maintain database consistency</li>
+    </ul>
+
+    <p>
+        Automation greatly reduces human error and improves operational reliability.
+    </p>
+
+    <h2>
+        Long-Term Business Intelligence
+    </h2>
+
+    <p>
+        Over time, purchase corrections themselves become valuable business intelligence data.
+    </p>
+
+    <p>
+        Businesses can analyze:
+    </p>
+
+    <ul>
+        <li>Which products generate the most corrections</li>
+        <li>Which suppliers generate the most discrepancies</li>
+        <li>Which operators require additional training</li>
+        <li>Which purchasing processes need improvement</li>
+        <li>Which inventory areas are most error-prone</li>
+    </ul>
+
+    <p>
+        This information can help businesses optimize operational workflows and reduce future errors.
+    </p>
+
+    <h2>
+        What You Will Learn in This Lecture
+    </h2>
+
+    <p>
+        Inside the Udemy course, this lecture includes a detailed practical walkthrough showing:
+    </p>
+
+    <ul>
+        <li>How to edit purchase quantities safely</li>
+        <li>How to modify purchase prices</li>
+        <li>How to replace products inside transactions</li>
+        <li>How to delete incorrect purchase items</li>
+        <li>How inventory balances update automatically</li>
+        <li>How stock calculations remain synchronized</li>
+        <li>How corrections affect operational data</li>
+        <li>How to maintain transaction consistency</li>
+    </ul>
+
+    <p>
+        The lecture explains the complete correction workflow step by step using real-world business examples and practical inventory scenarios.
+    </p>
+
+    <div class="section">
+
+        <h2>
+            Continue Learning
+        </h2>
+
+        <p>
+            Continue exploring the ERP ecosystem, inventory workflows, purchasing operations, stock management features, and educational resources below.
+        </p>
+
+        <a href="Contenido.html" class="button">
+            Return to Course Curriculum
+        </a>
+
+    </div>
+
+    <div class="section">
+
+        <h2>
+            Resources & Navigation
+        </h2>
+
+        <p>
+            Access software downloads, visual resources, ERP screenshots, multilingual courses, and complete educational materials below.
+            Everything belongs to a continuously improving free ecosystem with free support and long-term educational access.
+        </p>
+
+        <a class="button" href="https://www.dropbox.com/scl/fi/w857cfimlerq19gtxyxo9/Stocks.rar?rlkey=kn06ugzajdyi4suja1hboe92u&st=96866jmr&dl=1">
+            Download Software
+        </a>
+
+        <a class="button" href="Contenido.html">
+            Full Curriculum
+        </a>
+
+        <a class="button" href="desktop.html">
+            Desktop Images
+        </a>
+
+        <a class="button" href="app.html">
+            Mobile App Images
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/free-tool-for-small-businesses-sales-purchases-and-stock/">
+            Course (English)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/outil-gratuit-pour-entreprises-ventes-achats-et-stocks/">
+            Course (French)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/strumento-gratuito-per-imprese-acquisti-vendite-magazzino/">
+            Course (Italian)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/ferramenta-gratuita-para-empresas-compras-vendas-estoque/">
+            Course (Portuguese)
+        </a>
+
+        <a class="button button-green" href="index.html">
+            Go to Main Page
+        </a>
+
+    </div>
 
 </div>
 
