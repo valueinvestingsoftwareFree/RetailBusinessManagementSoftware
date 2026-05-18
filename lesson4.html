@@ -3,43 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecture 4. Designing an Inventory Hierarchy: Classes, Categories & Products</title>
+
+<title>Lecture 4. Designing an Inventory Hierarchy: Classes, Categories & Products | Inventory Management Course</title>
+
+<meta name="description" content="Learn how to design a professional inventory hierarchy using classes, categories, and products inside the free business accounting and stock management software. Improve inventory organization, reporting, scalability, stock analysis, and operational efficiency.">
+
+<meta name="keywords" content="inventory hierarchy, stock management system, inventory categories, product organization, ERP inventory structure, warehouse organization, inventory software, product classification, free inventory software, stock control system">
 
 <style>
+
     body{
         margin:0;
         padding:0;
         font-family:Arial, sans-serif;
         background:#0f172a;
         color:white;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        min-height:100vh;
+        line-height:1.8;
     }
 
     .container{
         width:90%;
-        max-width:900px;
+        max-width:1150px;
+        margin:40px auto;
         background:#111827;
         padding:50px;
         border-radius:18px;
         box-shadow:0 0 25px rgba(0,0,0,0.4);
-        text-align:center;
     }
 
     h1{
-        font-size:2.1rem;
-        margin-bottom:25px;
+        font-size:2.3rem;
+        margin-bottom:30px;
         color:#60a5fa;
         line-height:1.4;
+        text-align:center;
+    }
+
+    h2{
+        color:#93c5fd;
+        margin-top:45px;
+        margin-bottom:20px;
+        font-size:1.6rem;
     }
 
     p{
-        font-size:1.1rem;
-        line-height:1.8;
+        font-size:1.08rem;
+        line-height:1.9;
         color:#d1d5db;
-        margin-bottom:20px;
+        margin-bottom:22px;
+    }
+
+    ul{
+        color:#d1d5db;
+        padding-left:25px;
+    }
+
+    li{
+        margin-bottom:14px;
     }
 
     .highlight{
@@ -47,10 +67,24 @@
         font-weight:bold;
     }
 
+    .intro-box{
+        background:#1e293b;
+        border-left:5px solid #60a5fa;
+        padding:25px;
+        border-radius:12px;
+        margin-bottom:35px;
+    }
+
+    .section{
+        margin-top:50px;
+        padding-top:25px;
+        border-top:1px solid rgba(255,255,255,0.08);
+    }
+
     .button{
         display:inline-block;
-        margin-top:25px;
-        padding:14px 28px;
+        margin:10px;
+        padding:14px 26px;
         background:#2563eb;
         color:white;
         text-decoration:none;
@@ -63,6 +97,15 @@
         background:#1d4ed8;
         transform:translateY(-2px);
     }
+
+    .button-green{
+        background:#059669;
+    }
+
+    .button-green:hover{
+        background:#047857;
+    }
+
 </style>
 </head>
 
@@ -70,34 +113,245 @@
 
 <div class="container">
 
-    <h1>Lecture 4. Designing an Inventory Hierarchy: Classes, Categories & Products</h1>
+    <h1>
+        Lecture 4. Designing an Inventory Hierarchy: Classes, Categories & Products
+    </h1>
+
+    <div class="intro-box">
+
+        <p>
+            In this lecture you will learn how to build a 
+            <span class="highlight">professional inventory hierarchy</span> 
+            using Classes, Categories, and Products inside the business management software ecosystem.
+        </p>
+
+        <p>
+            Proper inventory organization is one of the most important foundations of successful stock management, accounting analysis, sales reporting, purchasing control, and long-term business scalability.
+        </p>
+
+    </div>
+
+    <h2>
+        Why Inventory Structure Matters
+    </h2>
 
     <p>
-        In this lecture you will learn how to design a structured inventory hierarchy using 
-        <span class="highlight">Classes</span>, 
-        <span class="highlight">Categories</span>, and 
-        <span class="highlight">Products</span>.
+        Many businesses initially start managing products without a clear organizational structure. Over time, this often creates confusion, duplicated products, inconsistent reports, inventory mistakes, and difficulties when analyzing business information.
     </p>
 
     <p>
-        A well-organized inventory structure helps businesses classify products efficiently, improve reporting accuracy, and simplify inventory management operations.
+        A properly designed inventory hierarchy allows businesses to organize products logically from the beginning, making the system easier to maintain as the company grows and the number of products increases.
     </p>
 
     <p>
-        You will understand how classes can group major business areas, how categories help organize related items, and how products are assigned within the hierarchy for better control and scalability.
+        Well-structured inventory systems improve:
+    </p>
+
+    <ul>
+        <li>Product organization</li>
+        <li>Inventory search speed</li>
+        <li>Stock analysis and reporting</li>
+        <li>Sales monitoring</li>
+        <li>Purchasing workflows</li>
+        <li>Business scalability</li>
+        <li>Operational clarity</li>
+        <li>Department organization</li>
+        <li>Financial reporting accuracy</li>
+        <li>Inventory maintenance efficiency</li>
+    </ul>
+
+    <h2>
+        Understanding Classes
+    </h2>
+
+    <p>
+        Classes represent the highest organizational level inside the inventory hierarchy. They are typically used to separate major business areas or broad operational divisions.
     </p>
 
     <p>
-        This structure becomes especially useful when managing large inventories with hundreds or thousands of products across different departments or business units.
+        For example, a business could create classes such as:
+    </p>
+
+    <ul>
+        <li>Electronics</li>
+        <li>Food Products</li>
+        <li>Office Supplies</li>
+        <li>Industrial Equipment</li>
+        <li>Clothing</li>
+        <li>Automotive Parts</li>
+    </ul>
+
+    <p>
+        Using classes allows businesses to group large inventories into manageable sections, making navigation, reporting, and operational analysis much more efficient.
+    </p>
+
+    <h2>
+        Understanding Categories
+    </h2>
+
+    <p>
+        Categories provide a second organizational level inside each class. Categories help group related products that share common characteristics or operational purposes.
     </p>
 
     <p>
-        The Udemy course provides a detailed practical explanation with real examples to help you design a clean and professional inventory system from the beginning.
+        For example, inside the Electronics class, categories could include:
     </p>
 
-    <a href="Contenido.html" class="button">
-        Return to Course Curriculum
-    </a>
+    <ul>
+        <li>Laptops</li>
+        <li>Monitors</li>
+        <li>Printers</li>
+        <li>Networking Equipment</li>
+        <li>Accessories</li>
+    </ul>
+
+    <p>
+        Categories make it easier to analyze inventory trends, review sales performance by product groups, monitor purchasing needs, and identify operational patterns across different product segments.
+    </p>
+
+    <h2>
+        Understanding Products
+    </h2>
+
+    <p>
+        Products represent the final operational level of the hierarchy and contain the specific items that businesses buy, sell, store, analyze, and track.
+    </p>
+
+    <p>
+        Every product can contain important operational information such as:
+    </p>
+
+    <ul>
+        <li>Product names</li>
+        <li>Internal codes</li>
+        <li>Prices</li>
+        <li>Stock quantities</li>
+        <li>Supplier references</li>
+        <li>Inventory movement history</li>
+        <li>Sales performance</li>
+        <li>Purchase history</li>
+        <li>Cost analysis information</li>
+    </ul>
+
+    <p>
+        Designing products correctly from the beginning reduces future maintenance problems and helps maintain consistent operational records across the business ecosystem.
+    </p>
+
+    <h2>
+        Long-Term Benefits of a Professional Inventory Hierarchy
+    </h2>
+
+    <p>
+        Businesses with organized inventory structures usually experience better operational control and more reliable reporting capabilities compared to businesses with disorganized product databases.
+    </p>
+
+    <p>
+        A strong inventory hierarchy becomes especially valuable when:
+    </p>
+
+    <ul>
+        <li>The business grows significantly</li>
+        <li>Thousands of products are managed</li>
+        <li>Multiple employees access the system</li>
+        <li>Advanced reporting becomes necessary</li>
+        <li>Supplier relationships become more complex</li>
+        <li>Warehouses or departments expand</li>
+        <li>Inventory analytics become important</li>
+        <li>Mobile synchronization is introduced</li>
+    </ul>
+
+    <p>
+        The software demonstrated throughout this course was designed to support scalable inventory structures while remaining practical and accessible for small businesses, stores, distributors, entrepreneurs, and independent professionals.
+    </p>
+
+    <h2>
+        Practical ERP and Inventory Management Concepts
+    </h2>
+
+    <p>
+        This lecture introduces organizational concepts commonly found in professional ERP systems and advanced inventory management environments used by businesses worldwide.
+    </p>
+
+    <p>
+        Students will learn how proper inventory organization supports:
+    </p>
+
+    <ul>
+        <li>Accounting integration</li>
+        <li>Inventory valuation</li>
+        <li>Sales analysis</li>
+        <li>Purchasing decisions</li>
+        <li>Financial forecasting</li>
+        <li>Warehouse organization</li>
+        <li>Business intelligence reporting</li>
+        <li>Operational efficiency improvements</li>
+    </ul>
+
+    <p>
+        Throughout the course, future lectures will continue expanding on these concepts using practical examples, real workflows, and step-by-step demonstrations inside the software environment.
+    </p>
+
+    <div class="section">
+
+        <h2>
+            Continue Learning
+        </h2>
+
+        <p>
+            Continue exploring the curriculum, software downloads, screenshots, and multilingual business management resources below.
+        </p>
+
+        <a href="Contenido.html" class="button">
+            Return to Course Curriculum
+        </a>
+
+    </div>
+
+    <div class="section">
+        <h2>Resources & Navigation</h2>
+
+        <p>
+            Access all software downloads, course materials, and visual resources below.
+            Everything is part of a <strong>free ecosystem</strong> with free support and continuous improvement driven by feedback.
+        </p>
+
+        <a class="button" href="https://www.dropbox.com/scl/fi/w857cfimlerq19gtxyxo9/Stocks.rar?rlkey=kn06ugzajdyi4suja1hboe92u&st=96866jmr&dl=1">
+            Download Software
+        </a>
+
+        <a class="button" href="Contenido.html">
+            Full Curriculum
+        </a>
+
+        <a class="button" href="desktop.html">
+            Desktop Images
+        </a>
+
+        <a class="button" href="app.html">
+            Mobile App Images
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/free-tool-for-small-businesses-sales-purchases-and-stock/">
+            Course (English)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/outil-gratuit-pour-entreprises-ventes-achats-et-stocks/">
+            Course (French)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/strumento-gratuito-per-imprese-acquisti-vendite-magazzino/">
+            Course (Italian)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/ferramenta-gratuita-para-empresas-compras-vendas-estoque/">
+            Course (Portuguese)
+        </a>
+
+        <a class="button button-green" href="index.html">
+            Go to Main Page
+        </a>
+
+    </div>
 
 </div>
 
