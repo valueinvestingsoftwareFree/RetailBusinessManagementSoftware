@@ -3,43 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lecture 10. Create Price Lists</title>
+
+<title>Lecture 10. Create Price Lists | Pricing Strategies, Customer Segmentation & Commercial Management</title>
+
+<meta name="description" content="Learn how to create and manage professional price lists inside the ERP system. Discover pricing strategies, customer segmentation, wholesale pricing, regional pricing, distributor pricing, promotional pricing, profitability control, and advanced commercial applications.">
+
+<meta name="keywords" content="ERP price lists, inventory pricing system, customer pricing, wholesale price lists, distributor prices, pricing strategies ERP, inventory sales pricing, multiple price levels, business pricing management, sales price automation">
 
 <style>
+
     body{
         margin:0;
         padding:0;
         font-family:Arial, sans-serif;
         background:#0f172a;
         color:white;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        min-height:100vh;
+        line-height:1.8;
     }
 
     .container{
         width:90%;
-        max-width:900px;
+        max-width:1180px;
+        margin:40px auto;
         background:#111827;
         padding:50px;
         border-radius:18px;
         box-shadow:0 0 25px rgba(0,0,0,0.4);
-        text-align:center;
     }
 
     h1{
-        font-size:2.1rem;
-        margin-bottom:25px;
+        font-size:2.4rem;
+        margin-bottom:30px;
         color:#60a5fa;
         line-height:1.4;
+        text-align:center;
+    }
+
+    h2{
+        color:#93c5fd;
+        margin-top:45px;
+        margin-bottom:20px;
+        font-size:1.6rem;
     }
 
     p{
-        font-size:1.1rem;
-        line-height:1.8;
+        font-size:1.08rem;
+        line-height:1.95;
         color:#d1d5db;
-        margin-bottom:20px;
+        margin-bottom:22px;
+    }
+
+    ul{
+        color:#d1d5db;
+        padding-left:25px;
+    }
+
+    li{
+        margin-bottom:14px;
     }
 
     .highlight{
@@ -47,10 +67,24 @@
         font-weight:bold;
     }
 
+    .intro-box{
+        background:#1e293b;
+        border-left:5px solid #60a5fa;
+        padding:25px;
+        border-radius:12px;
+        margin-bottom:35px;
+    }
+
+    .section{
+        margin-top:50px;
+        padding-top:25px;
+        border-top:1px solid rgba(255,255,255,0.08);
+    }
+
     .button{
         display:inline-block;
-        margin-top:25px;
-        padding:14px 28px;
+        margin:10px;
+        padding:14px 26px;
         background:#2563eb;
         color:white;
         text-decoration:none;
@@ -63,6 +97,15 @@
         background:#1d4ed8;
         transform:translateY(-2px);
     }
+
+    .button-green{
+        background:#059669;
+    }
+
+    .button-green:hover{
+        background:#047857;
+    }
+
 </style>
 </head>
 
@@ -70,37 +113,473 @@
 
 <div class="container">
 
-    <h1>Lecture 10. Create Price Lists</h1>
+    <h1>
+        Lecture 10. Create Price Lists
+    </h1>
+
+    <div class="intro-box">
+
+        <p>
+            In this lecture you will learn how to create and manage 
+            <span class="highlight">Price Lists</span> 
+            inside the ERP and inventory management system.
+        </p>
+
+        <p>
+            Price lists are one of the most powerful commercial tools inside modern business software because they allow companies to organize pricing strategies professionally across customers, products, sales channels, geographic regions, distributors, and commercial scenarios.
+        </p>
+
+        <p>
+            A well-designed pricing system helps businesses increase operational consistency, improve profitability control, simplify sales workflows, reduce human pricing errors, and create more advanced commercial strategies.
+        </p>
+
+    </div>
+
+    <h2>
+        Why Price Lists Are Extremely Important
+    </h2>
 
     <p>
-        In this lecture you will learn how to create and manage 
-        <span class="highlight">Price Lists</span> 
-        inside the system.
+        Pricing is one of the most sensitive and strategic areas of any business.
     </p>
 
     <p>
-        Price lists allow businesses to organize product prices efficiently for different customers, sales strategies, regions, distributors, or business scenarios.
+        Even small pricing inconsistencies can directly affect:
+    </p>
+
+    <ul>
+        <li>Profit margins</li>
+        <li>Sales performance</li>
+        <li>Customer satisfaction</li>
+        <li>Market competitiveness</li>
+        <li>Inventory rotation</li>
+        <li>Business growth</li>
+        <li>Financial stability</li>
+    </ul>
+
+    <p>
+        Without organized price lists, many businesses end up relying on manual calculations, memory, spreadsheets, or inconsistent pricing decisions that create operational confusion and profitability problems.
     </p>
 
     <p>
-        You will learn how to define price structures, assign prices to products, and configure multiple pricing levels according to your operational needs.
+        Professional price list management solves these problems by centralizing pricing rules inside the ERP system.
+    </p>
+
+    <h2>
+        What Is a Price List?
+    </h2>
+
+    <p>
+        A price list is a structured pricing configuration that defines how much products or services cost under specific business conditions.
     </p>
 
     <p>
-        The lecture also explains how price lists can simplify sales processes and improve pricing consistency across inventory operations.
+        Instead of maintaining a single fixed price for all customers, businesses can create multiple pricing structures adapted to different operational realities.
     </p>
 
     <p>
-        Proper price list management helps businesses maintain organized commercial strategies, improve customer service, and optimize sales workflows.
+        For example, the same product may have:
+    </p>
+
+    <ul>
+        <li>Retail price</li>
+        <li>Wholesale price</li>
+        <li>Distributor price</li>
+        <li>VIP customer price</li>
+        <li>Export price</li>
+        <li>Promotional price</li>
+        <li>Regional price</li>
+        <li>Online sales price</li>
+        <li>Corporate customer price</li>
+    </ul>
+
+    <p>
+        Price lists allow all these scenarios to coexist inside a single organized system.
+    </p>
+
+    <h2>
+        Customer Segmentation Applications
+    </h2>
+
+    <p>
+        One of the most important uses of price lists is customer segmentation.
     </p>
 
     <p>
-        The Udemy course includes a practical step-by-step demonstration showing how to create, configure, and manage price lists using real examples inside the software.
+        Different customer groups often require different commercial conditions.
     </p>
 
-    <a href="Contenido.html" class="button">
-        Return to Course Curriculum
-    </a>
+    <p>
+        For example:
+    </p>
+
+    <ul>
+        <li>Retail customers may pay standard prices</li>
+        <li>Wholesale customers may receive volume discounts</li>
+        <li>Distributors may receive special commercial rates</li>
+        <li>Loyal customers may receive preferential pricing</li>
+        <li>Corporate accounts may negotiate custom contracts</li>
+    </ul>
+
+    <p>
+        Price lists allow businesses to automate these commercial relationships instead of calculating prices manually every time.
+    </p>
+
+    <h2>
+        Wholesale and Distributor Pricing
+    </h2>
+
+    <p>
+        Wholesale operations usually require flexible pricing systems.
+    </p>
+
+    <p>
+        Businesses selling to distributors or resellers frequently need lower pricing structures because those customers purchase larger volumes.
+    </p>
+
+    <p>
+        The ERP system can maintain separate price lists for:
+    </p>
+
+    <ul>
+        <li>Retail sales</li>
+        <li>Wholesale distribution</li>
+        <li>Large-volume operations</li>
+        <li>Strategic commercial partners</li>
+        <li>Regional resellers</li>
+    </ul>
+
+    <p>
+        This helps maintain organized commercial structures while preserving profitability control.
+    </p>
+
+    <h2>
+        Geographic and Regional Pricing
+    </h2>
+
+    <p>
+        Price lists can also be used for geographic pricing strategies.
+    </p>
+
+    <p>
+        Businesses operating across multiple cities, countries, or regions often face different:
+    </p>
+
+    <ul>
+        <li>Transportation costs</li>
+        <li>Import costs</li>
+        <li>Taxes</li>
+        <li>Market conditions</li>
+        <li>Currency fluctuations</li>
+        <li>Competitive environments</li>
+    </ul>
+
+    <p>
+        Regional price lists allow businesses to adapt pricing according to local operational realities while maintaining centralized control inside the ERP.
+    </p>
+
+    <h2>
+        Promotional and Temporary Pricing
+    </h2>
+
+    <p>
+        Price lists are also extremely useful for promotional campaigns.
+    </p>
+
+    <p>
+        Businesses can create temporary pricing structures for:
+    </p>
+
+    <ul>
+        <li>Seasonal sales</li>
+        <li>Holiday promotions</li>
+        <li>Inventory liquidation</li>
+        <li>Special events</li>
+        <li>Marketing campaigns</li>
+        <li>Product launches</li>
+        <li>Clearance sales</li>
+    </ul>
+
+    <p>
+        Instead of manually modifying prices product by product, entire promotional pricing structures can be activated efficiently.
+    </p>
+
+    <h2>
+        Profitability Control
+    </h2>
+
+    <p>
+        Proper price list management is essential for profitability analysis.
+    </p>
+
+    <p>
+        The ERP system can help businesses compare:
+    </p>
+
+    <ul>
+        <li>Product costs</li>
+        <li>Sale prices</li>
+        <li>Profit margins</li>
+        <li>Discount structures</li>
+        <li>Commercial performance</li>
+    </ul>
+
+    <p>
+        This allows businesses to identify:
+    </p>
+
+    <ul>
+        <li>Products with low margins</li>
+        <li>Overly aggressive discounts</li>
+        <li>Unprofitable commercial strategies</li>
+        <li>Pricing inconsistencies</li>
+        <li>Opportunities for optimization</li>
+    </ul>
+
+    <p>
+        Pricing intelligence becomes much more reliable when integrated directly with inventory and purchasing information.
+    </p>
+
+    <h2>
+        Relationship Between Purchases and Price Lists
+    </h2>
+
+    <p>
+        Price lists are closely connected to purchase operations.
+    </p>
+
+    <p>
+        When product costs increase due to supplier price changes, businesses may need to update sales prices accordingly.
+    </p>
+
+    <p>
+        The ERP system allows companies to:
+    </p>
+
+    <ul>
+        <li>Analyze purchase cost evolution</li>
+        <li>Compare supplier pricing trends</li>
+        <li>Adjust margins dynamically</li>
+        <li>Protect profitability during inflation</li>
+        <li>Respond quickly to cost increases</li>
+    </ul>
+
+    <p>
+        This integration between purchasing and sales pricing creates a more intelligent commercial ecosystem.
+    </p>
+
+    <h2>
+        Reducing Human Error
+    </h2>
+
+    <p>
+        Manual pricing is one of the biggest sources of operational mistakes in many businesses.
+    </p>
+
+    <p>
+        Employees may accidentally:
+    </p>
+
+    <ul>
+        <li>Use outdated prices</li>
+        <li>Apply incorrect discounts</li>
+        <li>Forget negotiated rates</li>
+        <li>Use wrong customer pricing</li>
+        <li>Calculate margins incorrectly</li>
+    </ul>
+
+    <p>
+        Automated price lists greatly reduce these risks by allowing the ERP system to apply pricing rules automatically.
+    </p>
+
+    <h2>
+        Sales Workflow Optimization
+    </h2>
+
+    <p>
+        Organized price lists also improve sales speed significantly.
+    </p>
+
+    <p>
+        Sales operators can generate quotations, invoices, and transactions faster because pricing information is already structured and centralized inside the ERP.
+    </p>
+
+    <p>
+        This improves:
+    </p>
+
+    <ul>
+        <li>Sales efficiency</li>
+        <li>Customer service speed</li>
+        <li>Operational consistency</li>
+        <li>Commercial professionalism</li>
+        <li>Quotation generation workflows</li>
+    </ul>
+
+    <p>
+        Faster pricing workflows become especially important for businesses handling large inventories or many daily transactions.
+    </p>
+
+    <h2>
+        Real-World Business Examples
+    </h2>
+
+    <p>
+        Different industries use price lists in many different ways.
+    </p>
+
+    <p>
+        Examples include:
+    </p>
+
+    <ul>
+        <li>A hardware store using contractor pricing</li>
+        <li>A pharmacy using insurance-related prices</li>
+        <li>A wholesaler using distributor pricing tiers</li>
+        <li>A restaurant supplier using volume discounts</li>
+        <li>An electronics store using online vs in-store pricing</li>
+        <li>An exporter using international pricing structures</li>
+        <li>A manufacturer using reseller commissions</li>
+    </ul>
+
+    <p>
+        Price lists provide the flexibility necessary for these complex commercial environments.
+    </p>
+
+    <h2>
+        Long-Term Commercial Intelligence
+    </h2>
+
+    <p>
+        Over time, price list information becomes valuable business intelligence.
+    </p>
+
+    <p>
+        Companies can analyze:
+    </p>
+
+    <ul>
+        <li>Which pricing structures generate more sales</li>
+        <li>Which customer groups are most profitable</li>
+        <li>How pricing affects inventory rotation</li>
+        <li>Which discounts are sustainable</li>
+        <li>How market conditions affect pricing</li>
+    </ul>
+
+    <p>
+        This information helps businesses improve strategic commercial decision-making over time.
+    </p>
+
+    <h2>
+        ERP Integration Advantages
+    </h2>
+
+    <p>
+        Inside the ERP ecosystem, price lists integrate with:
+    </p>
+
+    <ul>
+        <li>Inventory modules</li>
+        <li>Purchasing systems</li>
+        <li>Sales invoices</li>
+        <li>Customer databases</li>
+        <li>Supplier cost information</li>
+        <li>Financial reporting</li>
+        <li>Quotation systems</li>
+        <li>Mobile synchronization</li>
+    </ul>
+
+    <p>
+        This integration creates a much more professional and scalable commercial infrastructure.
+    </p>
+
+    <h2>
+        What You Will Learn in This Lecture
+    </h2>
+
+    <p>
+        Inside the Udemy course, this lecture includes a complete practical demonstration showing:
+    </p>
+
+    <ul>
+        <li>How to create price lists</li>
+        <li>How to assign prices to products</li>
+        <li>How to organize multiple pricing levels</li>
+        <li>How to manage commercial pricing structures</li>
+        <li>How to simplify sales operations</li>
+        <li>How pricing integrates with inventory workflows</li>
+        <li>How to maintain pricing consistency</li>
+        <li>How to create scalable commercial strategies</li>
+    </ul>
+
+    <p>
+        The lecture explains the entire pricing workflow step by step using practical real-world ERP examples and commercial business scenarios.
+    </p>
+
+    <div class="section">
+
+        <h2>
+            Continue Learning
+        </h2>
+
+        <p>
+            Continue exploring inventory management, ERP workflows, commercial pricing systems, purchasing operations, and business intelligence tools below.
+        </p>
+
+        <a href="Contenido.html" class="button">
+            Return to Course Curriculum
+        </a>
+
+    </div>
+
+    <div class="section">
+
+        <h2>
+            Resources & Navigation
+        </h2>
+
+        <p>
+            Access software downloads, ERP screenshots, multilingual educational resources, mobile application previews, and complete course materials below.
+            Everything belongs to a continuously improving free ecosystem with free support and long-term accessibility.
+        </p>
+
+        <a class="button" href="https://www.dropbox.com/scl/fi/w857cfimlerq19gtxyxo9/Stocks.rar?rlkey=kn06ugzajdyi4suja1hboe92u&st=96866jmr&dl=1">
+            Download Software
+        </a>
+
+        <a class="button" href="Contenido.html">
+            Full Curriculum
+        </a>
+
+        <a class="button" href="desktop.html">
+            Desktop Images
+        </a>
+
+        <a class="button" href="app.html">
+            Mobile App Images
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/free-tool-for-small-businesses-sales-purchases-and-stock/">
+            Course (English)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/outil-gratuit-pour-entreprises-ventes-achats-et-stocks/">
+            Course (French)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/strumento-gratuito-per-imprese-acquisti-vendite-magazzino/">
+            Course (Italian)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/ferramenta-gratuita-para-empresas-compras-vendas-estoque/">
+            Course (Portuguese)
+        </a>
+
+        <a class="button button-green" href="index.html">
+            Go to Main Page
+        </a>
+
+    </div>
 
 </div>
 
