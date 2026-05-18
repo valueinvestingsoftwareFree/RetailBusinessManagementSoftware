@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecture 32. Mobile App Not Connecting? Solve Timeout Issues</title>
+
+<style>
+    body{
+        margin:0;
+        padding:0;
+        font-family:Arial, sans-serif;
+        background:#0f172a;
+        color:white;
+        min-height:100vh;
+    }
+
+    .container{
+        width:90%;
+        max-width:1100px;
+        margin:40px auto;
+        background:#111827;
+        padding:50px;
+        border-radius:18px;
+        box-shadow:0 0 25px rgba(0,0,0,0.45);
+    }
+
+    h1{
+        font-size:2.4rem;
+        margin-bottom:30px;
+        color:#60a5fa;
+        line-height:1.4;
+        text-align:center;
+    }
+
+    h2{
+        margin-top:45px;
+        margin-bottom:20px;
+        color:#93c5fd;
+        font-size:1.6rem;
+    }
+
+    p{
+        font-size:1.1rem;
+        line-height:1.9;
+        color:#d1d5db;
+        margin-bottom:22px;
+    }
+
+    ul{
+        margin-top:10px;
+        margin-bottom:25px;
+        padding-left:25px;
+    }
+
+    li{
+        font-size:1.05rem;
+        line-height:1.8;
+        color:#d1d5db;
+        margin-bottom:12px;
+    }
+
+    .highlight{
+        color:#93c5fd;
+        font-weight:bold;
+    }
+
+    .section{
+        margin-top:45px;
+        padding-top:10px;
+    }
+
+    .button{
+        display:inline-block;
+        margin:10px;
+        padding:14px 28px;
+        background:#2563eb;
+        color:white;
+        text-decoration:none;
+        border-radius:10px;
+        font-size:1rem;
+        transition:0.3s;
+    }
+
+    .button:hover{
+        background:#1d4ed8;
+        transform:translateY(-2px);
+    }
+
+    .button-green{
+        background:#059669;
+    }
+
+    .button-green:hover{
+        background:#047857;
+    }
+
+    .info-box{
+        background:#1e293b;
+        border-left:5px solid #60a5fa;
+        padding:25px;
+        border-radius:12px;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
+    .warning-box{
+        background:#3f1d1d;
+        border-left:5px solid #ef4444;
+        padding:25px;
+        border-radius:12px;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Lecture 32. Mobile App Not Connecting? Solve Timeout Issues</h1>
+
+    <p>
+        In this lecture you will learn how to solve one of the most important practical situations in mobile business applications:
+        <span class="highlight">connection timeout problems</span>.
+    </p>
+
+    <p>
+        When a mobile application connects to a desktop database or local business server, communication between devices depends on multiple technical factors such as Wi-Fi stability, firewall permissions, SQL Server accessibility, IP addresses, REST API configuration, router settings, internet latency, and Android network permissions.
+    </p>
+
+    <p>
+        Understanding how to diagnose and solve timeout problems is extremely important because business operations depend on stable communication between the Android mobile application and the desktop system.
+    </p>
+
+    <div class="info-box">
+
+        <p>
+            A timeout error normally means the mobile application attempted to communicate with the server or API, but the expected response did not arrive within the allowed time limit.
+        </p>
+
+        <p>
+            This does not necessarily mean the application is broken. In many cases the issue is caused by configuration, connectivity, blocked ports, incorrect IP addresses, inactive services, unstable Wi-Fi networks, or incorrect API settings.
+        </p>
+
+    </div>
+
+    <h2>Why Connection Stability Matters in Business Software</h2>
+
+    <p>
+        Mobile connectivity is one of the most important aspects of modern business systems. A mobile application that connects correctly allows employees, managers, sales teams, warehouse staff, and administrators to work from different locations while maintaining synchronized information with the desktop system.
+    </p>
+
+    <p>
+        In real business environments, connectivity problems can interrupt:
+    </p>
+
+    <ul>
+        <li>Sales registration processes</li>
+        <li>Inventory verification operations</li>
+        <li>Customer consultations</li>
+        <li>Supplier tracking</li>
+        <li>Mobile invoice creation</li>
+        <li>Purchase verification</li>
+        <li>Stock updates</li>
+        <li>Debt analysis operations</li>
+        <li>Financial review processes</li>
+        <li>Warehouse management activities</li>
+    </ul>
+
+    <p>
+        Because of this, learning how to diagnose timeout issues becomes a very valuable technical skill for anyone using mobile business software professionally.
+    </p>
+
+    <h2>Common Causes of Timeout Problems</h2>
+
+    <p>
+        Inside the course you will learn how to identify the most common causes of mobile connection failures and timeout situations.
+    </p>
+
+    <p>
+        Some of the most frequent causes include:
+    </p>
+
+    <ul>
+        <li>Incorrect IP address configuration</li>
+        <li>REST API service not running</li>
+        <li>SQL Server service disabled</li>
+        <li>Firewall blocking incoming requests</li>
+        <li>Wrong API port configuration</li>
+        <li>Router isolation settings</li>
+        <li>Android device connected to a different network</li>
+        <li>Internet provider restrictions</li>
+        <li>Slow or unstable Wi-Fi networks</li>
+        <li>Incorrect API URLs</li>
+        <li>VPN interference</li>
+        <li>Mobile battery optimization restrictions</li>
+        <li>Windows Defender blocking requests</li>
+        <li>REST API not listening externally</li>
+        <li>Expired local IP addresses after router restart</li>
+    </ul>
+
+    <h2>Importance of Understanding Local Network Architecture</h2>
+
+    <p>
+        One of the most valuable concepts explained in this lecture is how local network communication actually works.
+    </p>
+
+    <p>
+        Many users install applications successfully but do not fully understand how the Android application communicates with the desktop system through the local network or internet connection.
+    </p>
+
+    <p>
+        You will learn concepts such as:
+    </p>
+
+    <ul>
+        <li>Local IP addresses</li>
+        <li>Private networks</li>
+        <li>REST API endpoints</li>
+        <li>Ports and communication channels</li>
+        <li>Server accessibility</li>
+        <li>Request-response architecture</li>
+        <li>Network latency</li>
+        <li>Internal vs external access</li>
+        <li>Firewall permissions</li>
+        <li>Router communication rules</li>
+    </ul>
+
+    <p>
+        These concepts are incredibly valuable not only for this software, but also for understanding modern mobile systems in general.
+    </p>
+
+    <h2>Practical Troubleshooting Process</h2>
+
+    <p>
+        The course explains a structured troubleshooting methodology instead of random trial-and-error approaches.
+    </p>
+
+    <p>
+        You will learn how to test each component independently to quickly isolate the real source of the problem.
+    </p>
+
+    <p>
+        For example, the lecture explains how to:
+    </p>
+
+    <ul>
+        <li>Verify if the REST API is running correctly</li>
+        <li>Confirm that the Android device can reach the server</li>
+        <li>Test API URLs directly</li>
+        <li>Check if ports are open</li>
+        <li>Validate SQL Server accessibility</li>
+        <li>Identify firewall blocks</li>
+        <li>Restart required Windows services</li>
+        <li>Review router network segmentation</li>
+        <li>Verify Wi-Fi synchronization between devices</li>
+        <li>Detect DNS or IP configuration problems</li>
+    </ul>
+
+    <p>
+        This systematic approach saves enormous amounts of time when solving real-world technical problems.
+    </p>
+
+    <div class="warning-box">
+
+        <p>
+            Many timeout problems are caused by very small configuration mistakes. A single incorrect port number, wrong IP address, disabled firewall rule, or inactive service can prevent the entire mobile application from connecting correctly.
+        </p>
+
+        <p>
+            The lecture helps users identify these situations efficiently using clear practical demonstrations.
+        </p>
+
+    </div>
+
+    <h2>Android and Real Business Mobility</h2>
+
+    <p>
+        Android devices are widely used in real businesses because they are flexible, affordable, scalable, and available across thousands of device models worldwide.
+    </p>
+
+    <p>
+        The ability to connect Android devices with desktop inventory, sales, accounting, and purchasing systems creates enormous operational advantages for companies of all sizes.
+    </p>
+
+    <p>
+        With stable connectivity, businesses can:
+    </p>
+
+    <ul>
+        <li>Perform mobile sales</li>
+        <li>Check inventory remotely</li>
+        <li>Consult customer balances</li>
+        <li>Track suppliers in real time</li>
+        <li>Register transactions from warehouses</li>
+        <li>Synchronize field operations</li>
+        <li>Manage distributed teams</li>
+        <li>Reduce paperwork</li>
+        <li>Improve operational speed</li>
+        <li>Increase business mobility</li>
+    </ul>
+
+    <h2>Offline-Oriented Philosophy</h2>
+
+    <p>
+        One of the strongest aspects of this ecosystem is that the software is designed around local control and desktop-based operation instead of forcing businesses into cloud dependency.
+    </p>
+
+    <p>
+        The system operates primarily from the desktop machine and Android devices, while data remains under the direct control of the business itself.
+    </p>
+
+    <p>
+        This provides important advantages such as:
+    </p>
+
+    <ul>
+        <li>Greater control over business information</li>
+        <li>Reduced dependency on cloud subscriptions</li>
+        <li>Local database ownership</li>
+        <li>Faster local network operations</li>
+        <li>Better operational independence</li>
+        <li>Reduced recurring costs</li>
+        <li>More flexible infrastructure management</li>
+    </ul>
+
+    <h2>Complete Practical Demonstration</h2>
+
+    <p>
+        Inside the Udemy course you will find a complete practical walkthrough explaining how to solve timeout and connection issues step by step using real examples and real troubleshooting scenarios.
+    </p>
+
+    <p>
+        The lecture is designed not only to solve immediate problems, but also to help users understand the underlying technical concepts that make mobile business communication work correctly.
+    </p>
+
+    <div class="section">
+
+        <h2>Resources & Navigation</h2>
+
+        <p>
+            Access all software downloads, course materials, screenshots, and business management resources below.
+            Everything is part of a continuously evolving ecosystem focused on practical desktop and Android business solutions.
+        </p>
+
+        <a class="button" href="https://www.dropbox.com/scl/fi/w857cfimlerq19gtxyxo9/Stocks.rar?rlkey=kn06ugzajdyi4suja1hboe92u&st=96866jmr&dl=1">
+            Download Software
+        </a>
+
+        <a class="button" href="Contenido.html">
+            Full Curriculum
+        </a>
+
+        <a class="button" href="desktop.html">
+            Desktop Images
+        </a>
+
+        <a class="button" href="app.html">
+            Mobile App Images
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/free-tool-for-small-businesses-sales-purchases-and-stock/">
+            Course (English)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/outil-gratuit-pour-entreprises-ventes-achats-et-stocks/">
+            Course (French)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/strumento-gratuito-per-imprese-acquisti-vendite-magazzino/">
+            Course (Italian)
+        </a>
+
+        <a class="button" href="https://www.udemy.com/course/ferramenta-gratuita-para-empresas-compras-vendas-estoque/">
+            Course (Portuguese)
+        </a>
+
+        <a class="button button-green" href="index.html">
+            Go to Main Page
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
